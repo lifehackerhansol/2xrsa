@@ -17,10 +17,10 @@ typedef int (*IFile_Close_f)(IFILE *f);
 typedef int (*IFile_Read_f)(IFILE *f, unsigned int *read, void *buffer, unsigned int size);
 typedef int (*IFile_Write_f)(IFILE *f, uint32_t *written, void *src, uint32_t size);
 
-const IFile_Open_f IFile_Open;
-const IFile_Close_f IFile_Close;
-const IFile_Read_f IFile_Read;
-const IFile_Write_f IFile_Write;
+extern const IFile_Open_f IFile_Open;
+extern const IFile_Close_f IFile_Close;
+extern const IFile_Read_f IFile_Read;
+extern const IFile_Write_f IFile_Write;
 
 #endif//IFILE_11_H_
 
